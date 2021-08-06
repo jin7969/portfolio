@@ -41,7 +41,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section section__container">
     <h1>About me</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Quibusdam neque similique dolor animi, optio distinctio in
@@ -88,65 +88,76 @@
 
   <!-- Skills -->
   <section id="skills" class="section">
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Ex quibusdam impedit quisquam alias eos nobis dolorem
-      dolorum, voluptas quos asperiores id repellendus exercitationem
-      eius numquam iste magnam. Sint, officiis molestiae?
-    </p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skill__title">Skills</h3>
-        <div class="skill">
-          <div class="skill__description">
-            <span>HTML</span>
-            <span>70%</span>
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ex quibusdam impedit quisquam alias eos nobis dolorem
+        dolorum, voluptas quos asperiores id repellendus exercitationem
+        eius numquam iste magnam. Sint, officiis molestiae?
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:70%"></div>
+            </div>
           </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:50%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>REACT</span>
+              <span>40%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:40%"></div>
+            </div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>CSS</span>
-            <span>50%</span>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio</span></li>
+              <li><span>Eclipse</span></li>
+              <li><span>...</span></li>
+              <li><span>...</span></li>
+              <li><span>...</span></li>
+            </ul>
           </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>JavaScript</span>
-            <span>50%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Algorithm</span></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio</span></li>
-            <li><span>Eclipse</span></li>
-            <li><span>...</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-            <li><span>Algorithm</span></li>
-          </ul>
-        </div>
-      </div>
-
     </div>
-
   </section>
 
   <!-- Work -->
@@ -154,27 +165,27 @@
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn">All <span class="category__count">5</span></button>
-      <button class="category__btn">Web <span class="category__count">2</span></button>
-      <button class="category__btn">Mobile <span class="category__count">2</span></button>
+      <button class="category__btn active">All <span class="category__count">3</span></button>
+      <button class="category__btn">Web <span class="category__count">1</span></button>
+      <button class="category__btn">Mobile <span class="category__count">1</span></button>
       <button class="category__btn">Front-end <span class="category__count">1</span></button>
     </div>
     <div class="work__projects">
-      <a href="https://github.com/jin7969/portfolio" class="project" data-type="Web">
+      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
         <img src="imgs/project1.png" alt="" class="project__img">
         <div class="project__description">
           <h3>Youtube clone coding</h3>
           <span>HTML and CSS</span>
         </div>
       </a>
-      <a href="https://github.com/jin7969/portfolio" class="project" data-type="Web">
+      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
         <img src="imgs/project2.png" alt="" class="project__img">
         <div class="project__description">
           <h3>반응형 웹</h3>
           <span>반응형 Web</span>
         </div>
       </a>
-      <a href="https://github.com/jin7969/portfolio" class="project" data-type="Mobile">
+      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Mobile">
         <img src="imgs/project7.png" alt="" class="project__img">
         <div class="project__description">
           <h3>모바일</h3>
