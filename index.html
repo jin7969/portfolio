@@ -22,21 +22,26 @@
       <i class="fab fa-autoprefixer"></i>
       <a href="#">Ahn</a>
     </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item active">Home</li>
-      <li class="navbar__menu__item">About</li>
-      <li class="navbar__menu__item">Skills</li>
-      <li class="navbar__menu__item">My work</li>
-      <li class="navbar__menu__item">Testimonial</li>
-      <li class="navbar__menu__item">Contact</li>
-    </ul>
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonial</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </div>
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
   </nav>
 
   <!-- Home -->
   <section id="home">
     <img src="imgs/profile.jpg" alt="" class="home__avatar">
     <h1 class="home__title">Hello,<br>I'm Ahn Coder</h1>
-    <h2 class="home__description">" 가보지 않은 길을 가야 할 때 용기를 내는 개발자 "</h2>
+    <h2 class="home__description">" 가보지 않은 길을 가야 할 때 용기를 내는 사람 "</h2>
     <button class="home__contact">CONTACT ME</button>
   </section>
 
@@ -162,36 +167,38 @@
 
   <!-- Work -->
   <section id="work" class="section">
-    <h1>My work</h1>
-    <h3>Projects</h3>
-    <div class="work__categories">
-      <button class="category__btn active">All <span class="category__count">3</span></button>
-      <button class="category__btn">Web <span class="category__count">1</span></button>
-      <button class="category__btn">Mobile <span class="category__count">1</span></button>
-      <button class="category__btn">Front-end <span class="category__count">1</span></button>
-    </div>
-    <div class="work__projects">
-      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
-        <img src="imgs/project1.png" alt="" class="project__img">
-        <div class="project__description">
-          <h3>Youtube clone coding</h3>
-          <span>HTML and CSS</span>
-        </div>
-      </a>
-      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
-        <img src="imgs/project2.png" alt="" class="project__img">
-        <div class="project__description">
-          <h3>반응형 웹</h3>
-          <span>반응형 Web</span>
-        </div>
-      </a>
-      <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Mobile">
-        <img src="imgs/project7.png" alt="" class="project__img">
-        <div class="project__description">
-          <h3>모바일</h3>
-          <span>모바일 애플리케이션</span>
-        </div>
-      </a>
+    <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn active">All <span class="category__count">3</span></button>
+        <button class="category__btn">Web <span class="category__count">1</span></button>
+        <button class="category__btn">Mobile <span class="category__count">1</span></button>
+        <button class="category__btn">Front-end <span class="category__count">1</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
+          <img src="imgs/project1.png" alt="" class="project__img">
+          <div class="project__description">
+            <h3>Youtube clone coding</h3>
+            <span>HTML and CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Web">
+          <img src="imgs/project2.png" alt="" class="project__img">
+          <div class="project__description">
+            <h3>반응형 웹</h3>
+            <span>반응형 Web</span>
+          </div>
+        </a>
+        <a href="https://github.com/jin7969/portfolio" class="project" target="blank" data-type="Mobile">
+          <img src="imgs/project7.png" alt="" class="project__img">
+          <div class="project__description">
+            <h3>모바일</h3>
+            <span>모바일 애플리케이션</span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
