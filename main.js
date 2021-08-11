@@ -28,7 +28,16 @@ contactBtn.addEventListener('click', (event) => {
   scrollIntoView('#contact')
 });
 
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
+
+// 홈화면 투명도 조절
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+console.log(homeHeight);
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
