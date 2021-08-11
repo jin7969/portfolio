@@ -472,6 +472,31 @@ p {
   transform: scale(1.1);
 }
 
+.arrow-up {
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  position: fixed;
+  border-radius: 50%;
+  font-size: 45px;
+  right: 50px;
+  bottom: 50px;
+  opacity: 0.8;
+  pointer-events: auto;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.arrow-up:hover {
+  background-color: var(--color-light-white);
+  color: var(--color-dark-pink);
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
