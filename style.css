@@ -115,11 +115,12 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: #ffa298;
-  padding: 8px;
+  padding: 4px;
 }
 
 .navbar__logo {
@@ -149,7 +150,7 @@ p {
 .navbar__toggle-btn {
   position: absolute;
   right: 32px;
-  top: 12px;
+  top: 8px;
   font-size: var(--font-medium);
   color: var(--color-white);
   display: none;
