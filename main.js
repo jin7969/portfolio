@@ -22,7 +22,15 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// navbar toggle button open
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  console.log(1);
+  navbarMenu.classList.toggle('open');
 });
 
 // contact button 이동
@@ -40,7 +48,6 @@ function scrollIntoView(selector) {
 // 홈화면 투명도 조절
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
-console.log(homeHeight);
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
@@ -49,4 +56,32 @@ document.addEventListener('scroll', () => {
 // arrow button
 arrow.addEventListener('click', () => {
   scrollIntoView('#home');
+});
+
+// projects
+const workBtn = document.querySelector('.work__categories');
+const projectCon = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtn.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  const active = document.querySelector('.category__btn.selected');
+  if (active != null) {
+    active.classList.remove('selected');
+  }
+  e.target.classList.add('selected');
+
+  projectCon.classList.add('anim-out');
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectCon.classList.remove('anim-out');
+  }, 300);
 });
